@@ -1,0 +1,11 @@
+name: something folder
+on:
+  push:
+    paths:
+      - 'something/**'
+
+jobs:
+  handle-api:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Check again how it works from something directory"
